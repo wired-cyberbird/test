@@ -2,6 +2,15 @@
 
 /* stash */
 
+char *my_strcat(char *t, char *s){
+	char *p = t;
+	while(*p)
+		++p;
+	while(*p++ = *s++)
+		;
+	return t;
+}
+
 size_t my_strlen(const char *s){
 	const char *p = s;
 	while (*p)
