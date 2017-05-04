@@ -2,8 +2,8 @@
 #include <wchar.h>
 
 /* stash */
-
-size_t w_strlen(const wchar_t *s){
+/* wide character strlen function */
+size_t my_wc_strlen(const wchar_t *s){
 	const wchar_t *p = s;
 	while(*p)
 		++p;
