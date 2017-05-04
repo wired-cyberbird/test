@@ -1,0 +1,32 @@
+From d9f2746b12d2fd3018f567ddd0b3ce22e2adfcd9 Mon Sep 17 00:00:00 2001
+From: root <root@localhost.localdomain>
+Date: Thu, 4 May 2017 15:00:36 -0500
+Subject: [PATCH] Added my_strcat function
+
+---
+ src/string_operations.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/src/string_operations.c b/src/string_operations.c
+index fb7cdc8..bdb2826 100644
+--- a/src/string_operations.c
++++ b/src/string_operations.c
+@@ -2,6 +2,15 @@
+ 
+ /* stash */
+ 
++char *my_strcat(char *t, char *s){
++	char *p = t;
++	while(*p)
++		++p;
++	while(*p++ = *s++)
++		;
++	return t;
++}
++
+ size_t my_strlen(const char *s){
+ 	const char *p = s;
+ 	while (*p)
+-- 
+2.11.0
+

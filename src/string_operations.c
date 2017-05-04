@@ -1,6 +1,14 @@
 #include <stdio.h>
+#include <wchar.h>
 
 /* stash */
+
+size_t w_strlen(const wchar_t *s){
+	const wchar_t *p = s;
+	while(*p)
+		++p;
+	return(p-s);
+}
 
 char *my_strcat(char *t, char *s){
 	char *p = t;
